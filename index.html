@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sunflower English Shop</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="brand-logo">🌻 Sunflower <span>Shop</span></h1>
+      <div class="brand-slogan">Cute English PDFs for You</div>
+    </header>
+
+    <div class="container">
+      <!-- 안내 메시지 (스페인어) -->
+      <div class="welcome-box">
+        <h2>¡Hacé florecer tu inglés! 🌻</h2>
+        <p class="welcome-desc">
+          ¿Querés mejorar tu nivel? Es muy fácil.<br />
+          Elegí tu material favorito y
+          <strong>escribime por WhatsApp</strong> para obtenerlo.
+        </p>
+
+        <div class="steps">
+          <div class="step">
+            <span class="step-icon">👀</span><span>Mirá</span>
+          </div>
+          <div class="step-arrow">➜</div>
+          <div class="step">
+            <span class="step-icon">💬</span><span>Pedí</span>
+          </div>
+          <div class="step-arrow">➜</div>
+          <div class="step">
+            <span class="step-icon">📚</span><span>Aprendé</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 관리자 패널 -->
+      <div id="admin-panel">
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+          "
+        >
+          <h3
+            style="
+              margin: 0;
+              font-family: &quot;Patrick Hand&quot;;
+              font-size: 1.5rem;
+            "
+          >
+            ✨ New Product
+          </h3>
+          <button
+            id="btn-logout"
+            style="
+              background: none;
+              border: none;
+              text-decoration: underline;
+              cursor: pointer;
+              color: #999;
+              font-family: &quot;Nunito&quot;;
+            "
+          >
+            Logout
+          </button>
+        </div>
+
+        <div class="input-group">
+          <input
+            type="text"
+            id="p-title"
+            placeholder="Title (e.g. Travel English PDF)"
+          />
+          <!-- 숫자만 입력되는 가격창 -->
+          <input
+            type="number"
+            id="p-price"
+            placeholder="Price (Numbers only, e.g. 2000)"
+          />
+          <textarea
+            id="p-desc"
+            rows="3"
+            placeholder="Short description..."
+          ></textarea>
+        </div>
+        <button id="btn-add" class="btn-primary">Add Item 🌻</button>
+      </div>
+
+      <!-- 상품 목록 -->
+      <div id="product-list" class="product-list">
+        <div class="empty-state">Loading... 🌻</div>
+      </div>
+    </div>
+
+    <!-- 플로팅 왓츠앱 버튼 -->
+    <!-- 본인 번호로 연결됨 (text는 인코딩되어 전송) -->
+    <a href="https://wa.me/5493434551122" class="floating-wa" target="_blank">
+      💬
+    </a>
+
+    <!-- 푸터 -->
+    <footer>
+      <h1>Acompañamos tu aprendizaje. 🌻</h1>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
